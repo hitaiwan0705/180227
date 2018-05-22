@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)http://103.17.11.230/MagicScripts/Mgrqispi.dll?appname=free&prgname=index&v2 -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>輝盟（free）</title>
+
+  <meta http-equiv="EXPIRES" content="Mon, 22 Jul 2002 11:12:01 GMT">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./輝盟（free）_files/bootstrap.min.css">
+  <link rel="shortcut icon" sizes="16x16" href="http://103.17.11.230/free/images/icon-16x16.png">
+  <link rel="shortcut icon" sizes="196x196" href="http://103.17.11.230/free/images/icon-196x196.png">
+  <link rel="apple-touch-icon-precomposed" href="http://103.17.11.230/free/images/icon-152x152.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./輝盟（free）_files/addtohomescreen.css">
+  <link rel="stylesheet" href="./輝盟（free）_files/all.css">
+  <link rel="stylesheet" href="./輝盟（free）_files/font-awesome.min.css">
+  <link rel="stylesheet" crossorigin="anonymous" href="./輝盟（free）_files/main.css">
+  <script src="./輝盟（free）_files/addtohomescreen.js.下載"></script>
+  <script src="./輝盟（free）_files/jquery.min.js.下載"></script>
+  <script src="./輝盟（free）_files/bootstrap.min.js.下載"></script>
+  <script>
+    window.onload = function() {}
+
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Microsoft JhengHei;
+    }
+
+    /* Navbar */
+
+    .navbar-toggle {
+      position: relative;
+      float: left;
+      width: auto;
+      height: auto;
+      padding: 1px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      margin-left: 6px;
+      margin-right: 12px;
+      border: 0px solid;
+      border-radius: 4px;
+    }
+
+    .navbar-header,
+    .navbar-brand {
+      display: inline-block;
+      position: relative;
+      align: center;
+      background-color: transparent;
+    }
+
+    .navbar-right {
+      display: inline-block;
+      position: relative;
+      background-color: transparent;
+    }
+
+    .navbar-search,
+    .navbar-cart {
+      width: 100%;
+      margin: 10px;
+      vertical-align: middle;
+    }
+
+    /* Carousel */
+
+    .carousel-inner>.item>img,
+    .carousel-inner>.item>a>img {
+      width: 100%;
+      margin: auto;
+    }
+
+    .carousel-indicators .li {
+      bottom: 30px;
+      display: inline-block;
+      background-color: #e8e8e8;
+    }
+
+    .carousel-indicators .active {
+      background-color: #c6c6c6;
+    }
+
+    /* text-block */
+
+    .text-block {
+      position: absolute;
+      top: 83%;
+      bottom: auto;
+      font-size: 20px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+      color: #ffffff;
+      opacity: 0.9;
+    }
+
+    /* Image Options */
+
+    .img {
+      max-width: 100%;
+      z-index: 40;
+      opacity: 1.0;
+    }
+
+    .img: hover {
+      opacity: 0.6;
+    }
+
+
+    /* Menu Icon Animate */
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+      transform: rotate(-45deg) translate(-6px, 7px);
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-6px, -7px);
+      transform: rotate(45deg) translate(-6px, -7px);
+    }
+
+    /*underline*/
+
+    .divider {
+      border-top: 1px solid #d9dadc;
+      display: block;
+      line-height: 1px;
+      margin: 15px 0;
+      position: relative;
+      text-align: center;
+    }
+
+    .divider .divider-title {
+      background: #fff;
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+
+    /* Top Button */
+
+    #TopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 15px;
+      z-index: 100;
+      border: none;
+      outline: none;
+      background-color: ;
+      color: #000000;
+      cursor: pointer;
+      padding: 0;
+      border-radius: 50%;
+      opacity: 0.8;
+    }
+
+    #TopBtn:hover {
+      opacity: 0.6;
+    }
+
+    /* Responsive Table */
+
+    .sign-up,
+    .line-thru {
+      display: block;
+      font-size: 1px;
+      margin-bottom: 10px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+    }
+
+
+    .table {
+      border-spacing: 0;
+      width: 100%;
+    }
+
+    .table-1 {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    }
+
+
+    .modal-dialog {
+      width: auto;
+
+    }
+
+    /* Style table headers and table data */
+
+    th,
+    td,
+    th:first-child,
+    td:first-child {
+      text-align: center;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      font-size: 14px;
+      font-weight: bold;
+      max-width: 50%;
+    }
+
+    /* On screens that are 992px or less */
+
+    @media screen and (max-width: 992px) {
+      th,
+      td,
+      th:first-child,
+      td:first-child {
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 98%;
+        font-weight: bold;
+        max-width: 25%;
+      }
+
+    }
+
+    /* On screens that are 768px or less */
+
+    @media screen and (max-width: 768px) {
+      th,
+      td,
+      th:first-child,
+      td:first-child {
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 80%;
+        font-weight: bold;
+        max-width: 33%;
+      }
+      p {
+        top: 86%;
+        font-size: 20px;
+      }
+    }
+
+    /* Zebra-striped table rows */
+
+    tr:nth-child(even) {
+      background-color: #fff5bf;
+    }
+
+    }
+  </style>
+
+
+  <style type="text/css" id="parrottalks-notetaker-style">
+    html>body.evernote_clearly__before_visible #parrottalks-notetaker>iframe,
+    html>body.clearlyBeforeVisible #parrottalks-notetaker>iframe:not(#evernoteGlobalTools):not(#evernoteOptionsPage):not(#evernoteClearlyArticle) {
+      visibility: visible !important;
+    }
+
+    .evernote_clearly__before_visible #evernote_clearly__reformat,
+    .clearlyBeforeVisible #evernoteClearlyArticle {
+      z-index: 2147483646 !important;
+    }
+  </style>
+  <style type="text/css" nonce="D12732C453DE974D979B7D6DDA2AD089">
+    #AD_Top,
+    #AD_banner,
+    #AdColumn,
+    #AdContainer,
+    #AdHeader,
+    #AdImage,
+    #Adcode,
+    #AdvertiseFrame,
+    #Advertisements,
+    #BottomAdContainer,
+    #BottomAds,
+    #ContentAd,
+    #PreRollAd,
+    #RightAdBlock,
+    #TopAd,
+    #WNAd41,
+    #ad-area,
+    #ad-background,
+    #ad-bg,
+    #ad-bottom,
+    #ad-container,
+    #ad-header,
+    #ad-header-728x90,
+    #ad-leaderboard,
+    #ad-main,
+    #ad-panel,
+    #ad-right,
+    #ad-rotator,
+    #ad-text,
+    #ad-top,
+    #ad-top-banner-placeholder,
+    #ad-top-wrapper,
+    #ad-unit,
+    #ad-wrapper,
+    #ad468,
+    #ad728,
+    #ad728x90,
+    #adBanner,
+    #adBelt,
+    #adComponentWrapper,
+    #adDiv,
+    #adFrame,
+    #adGallery,
+    #adHeader,
+    #adHolder,
+    #adLayer,
+    #adLeader,
+    #adPosition0,
+    #adText,
+    #ad_1,
+    #ad_2,
+    #ad_3,
+    #ad_4,
+    #ad_5,
+    #ad_728_90,
+    #ad_area,
+    #ad_banner,
+    #ad_center,
+    #ad_content,
+    #ad_header,
+    #ad_leaderboard,
+    #ad_main,
+    #ad_overlay,
+    #ad_space,
+    #ad_square,
+    #ad_table,
+    #ad_topslot,
+    #ad_unit,
+    #ad_wrap,
+    #ad_wrapper,
+    #adaptv_ad_player_div,
+    #adbackground,
+    #adbanner,
+    #adbar,
+    #adblock,
+    #adboard,
+    #adbody,
+    #adbox,
+    #adcode,
+    #adcontainer,
+    #adcontainer1,
+    #adcontent,
+    #adhead,
+    #adheader,
+    #adimg1,
+    #adlayer,
+    #adnews,
+    #adposition3,
+    #adright,
+    #ads-col,
+    #ads-wrapper,
+    #ads1,
+    #adsHeader,
+    #adsIframe,
+    #ads_bottom,
+    #ads_right,
+    #ads_top,
+    #ads_wrapper,
+    #adsdiv,
+    #adsense,
+    #adsense_block,
+    #adsense_inline,
+    #adsensewide,
+    #adspace,
+    #adspace_top,
+    #adspot-300x250-pos-1,
+    #adspot-300x250-pos-2,
+    #adstop,
+    #adtext,
+    #adtop,
+    #adv-masthead,
+    #adv-top,
+    #advert1,
+    #advert2,
+    #advertContainer,
+    #advert_box,
+    #advertise,
+    #advertisement1,
+    #advertisetop,
+    #advertising_wrapper,
+    #adverts,
+    #advtop,
+    #adwrapper,
+    #banner-ad,
+    #bannerAd,
+    #bannerAdWrapper,
+    #banner_topad,
+    #bannerad,
+    #bigAd,
+    #bigad,
+    #body_ad,
+    #bottomAd,
+    #bottomAds,
+    #bottom_ad,
+    #centerads,
+    #cmn_ad_tag_head,
+    #content-header-ad,
+    #contentAd,
+    #content_ads,
+    #content_adv,
+    #contentad,
+    #ctlDisplayAd1_lblAd,
+    #dart-container-728x90,
+    #dfp_ad_Entry_728x90,
+    #dfp_ad_Home_728x90,
+    #divAd,
+    #div_prerollAd_1,
+    #download_ad,
+    #featuread,
+    #featured-ads,
+    #featuredAds,
+    #footer_ad,
+    #footer_ads,
+    #game-ad,
+    #googlead,
+    #gridAdSidebar,
+    #head-ad,
+    #header-ads,
+    #headerAd,
+    #headerAdContainer,
+    #header_ad,
+    #homead,
+    #ka_adRightSkyscraperWide,
+    #leaderAd,
+    #leaderBoardAd,
+    #leaderboard-ad,
+    #leaderboard-advertisement,
+    #leaderboardad,
+    #left-ad,
+    #left_ads,
+    #leftad,
+    #leftads,
+    #logoAd,
+    #logo_ad,
+    #mainAd,
+    #main_ad,
+    #mpu2,
+    #mpu2_container,
+    #mpu_container,
+    #msad,
+    #my-adsFPAD,
+    #myAd,
+    #player_ads,
+    #pre_advertising_wrapper,
+    #prerollAd,
+    #promo-ad,
+    #publicidad,
+    #reklama,
+    #rh-ad,
+    #right_ads,
+    #right_adsense,
+    #search-sponsor,
+    #searchAd,
+    #search_ads,
+    #sideAd,
+    #side_ads,
+    #sidebar-ads,
+    #sidebar_ad,
+    #sidebar_ads,
+    #skybox-ad,
+    #sponsorAdDiv,
+    #sponsorText,
+    #sponsoredwellcontainerbottom,
+    #sponsors-home,
+    #takeover_ad,
+    #text-ads,
+    #theAd,
+    #top-ad,
+    #top-ad-content,
+    #topAd,
+    #topAdSpace,
+    #topAdSpace_div,
+    #topAdvert,
+    #topBannerAd,
+    #top_ad,
+    #top_ads,
+    #topad,
+    #topadvert,
+    #topbannerad,
+    #under_story_ad,
+    #videoAd,
+    #videoAdContainer,
+    #videoads,
+    .ADBAR,
+    .AdBar,
+    .AdBody:not(body),
+    .AdBox,
+    .AdInfo,
+    .AdSidebar,
+    .AdTitle,
+    .AdvertContainer,
+    .HomeAds,
+    .IM_ad_unit,
+    .LazyLoadAd,
+    .RelatedAds,
+    .SponsoredContent,
+    .ad-300x250,
+    .ad-970,
+    .ad-banner,
+    .ad-block,
+    .ad-body,
+    .ad-border,
+    .ad-btn,
+    .ad-button,
+    .ad-cat,
+    .ad-cell,
+    .ad-display,
+    .ad-enabled,
+    .ad-header,
+    .ad-holder,
+    .ad-img,
+    .ad-inner,
+    .ad-item,
+    .ad-leader-top,
+    .ad-leaderboard,
+    .ad-left,
+    .ad-link,
+    .ad-links,
+    .ad-loaded,
+    .ad-panel,
+    .ad-placement,
+    .ad-rail,
+    .ad-right,
+    .ad-row,
+    .ad-scroll,
+    .ad-section,
+    .ad-served,
+    .ad-sidebar,
+    .ad-source,
+    .ad-square,
+    .ad-stack,
+    .ad-text,
+    .ad-top,
+    .ad-unit,
+    .ad-unit-300-wrapper,
+    .ad-vertical-container,
+    .ad-wide,
+    .ad-wrap,
+    .ad-wrapper,
+    .ad300,
+    .ad468,
+    .ad728,
+    .ad90,
+    .adBar,
+    .adBlock,
+    .adBottomBoard,
+    .adBox,
+    .adChoicesLogo,
+    .adContent,
+    .adDiv,
+    .adElement,
+    .adFrame,
+    .adFrameCnt,
+    .adHead,
+    .adHeader,
+    .adHeaderblack,
+    .adHeadline,
+    .adHolder,
+    .adHoldert,
+    .adImg,
+    .adItem,
+    .adLink,
+    .adMessage,
+    .adMiddle,
+    .adMod,
+    .adModule,
+    .adOverlay,
+    .adPanel,
+    .adPod,
+    .adResult,
+    .adRight,
+    .adRotator,
+    .adSpace,
+    .adSpot,
+    .adText,
+    .adTitle,
+    .adTopHome,
+    .adWidget,
+    .adWrap,
+    .ad_1,
+    .ad_160,
+    .ad_160x600,
+    .ad_2,
+    .ad_3,
+    .ad_728x90,
+    .ad_960,
+    .ad_Right,
+    .ad_block,
+    .ad_body,
+    .ad_bottom,
+    .ad_container,
+    .ad_description,
+    .ad_global_header,
+    .ad_head_rectangle,
+    .ad_header,
+    .ad_img,
+    .ad_item,
+    .ad_leaderboard,
+    .ad_middle,
+    .ad_outer,
+    .ad_promo,
+    .ad_slug_table,
+    .ad_space,
+    .ad_spot,
+    .ad_text,
+    .ad_title,
+    .ad_trick_header,
+    .ad_trick_left,
+    .ad_wrap,
+    .ad_wrapper,
+    .adarea,
+    .adbanner,
+    .adbar,
+    .adbottom,
+    .adbutton,
+    .adcolumn,
+    .adcont,
+    .addiv,
+    .adframe,
+    .adfree,
+    .adheader,
+    .adholder,
+    .adinfo,
+    .adkit,
+    .adlink,
+    .adlist,
+    .admain,
+    .admiddle,
+    .adright,
+    .adrow1,
+    .adrow2,
+    .ads-1,
+    .ads-2,
+    .ads-3,
+    .ads-300-250,
+    .ads-area,
+    .ads-bg,
+    .ads-col,
+    .ads-header,
+    .ads-holder,
+    .ads-inline,
+    .ads-item,
+    .ads-right,
+    .ads-section,
+    .ads-title,
+    .ads-top,
+    .ads1,
+    .adsBlock,
+    .adsWidget,
+    .ads_catDiv,
+    .ads_div,
+    .ads_top,
+    .ads_wrapper,
+    .adsbottombox,
+    .adsbox,
+    .adsbygoogle,
+    .adscontainer,
+    .adshome,
+    .adside,
+    .adslot,
+    .adslot_blurred,
+    .adspace,
+    .adtable,
+    .adtile,
+    .adtop,
+    .adv300,
+    .adv_300,
+    .adv_txt,
+    .advert-block,
+    .advert-box,
+    .advert-container,
+    .advert-content,
+    .advert-horizontal,
+    .advert-wrapper,
+    .advert2,
+    .advertColumn,
+    .advertContainer,
+    .advertLink,
+    .advertText,
+    .advert_area,
+    .advert_container,
+    .advert_list,
+    .advertbox,
+    .advertisement-1,
+    .advertisement-block,
+    .advertisement__leaderboard,
+    .advertiser,
+    .advertising_banner,
+    .advertising_block,
+    .advertisment,
+    .advertorial,
+    .adverts,
+    .adverttext,
+    .adwords,
+    .afs_ads,
+    .after-post-ad,
+    .article-advert,
+    .article_ad,
+    .b-advert,
+    .b-banner,
+    .banner-ad,
+    .banner-ads,
+    .banner160x600,
+    .banner300,
+    .bannerAd,
+    .banner_728x90,
+    .banner_ad,
+    .bannerad,
+    .block-ad,
+    .block-ec_ads,
+    .block-simpleads,
+    .blog-ads,
+    .bottom-ad,
+    .bottom-ads,
+    .bottom-left-ad,
+    .bottomAds,
+    .bottom_ad_block,
+    .box-ads,
+    .box-radvert,
+    .box-recommend-ad,
+    .box_ads,
+    .box_adv,
+    .boxad,
+    .boxadv,
+    .btn-ad,
+    .can_ad_slug,
+    .category-ad,
+    .change_AdContainer,
+    .chitikaAdBlock,
+    .commerce-inset,
+    .container_ad,
+    .container_row_ad,
+    .contentAd,
+    .contentAds,
+    .content_ads,
+    .content_tagsAdTech,
+    .cp-adsInited,
+    .custom-ad,
+    .desktop-ad,
+    .dfp-ad,
+    .dfp-ad-unit,
+    .dfp-tag-wrapper,
+    .displayAd,
+    .download_ad,
+    .easyazon-block,
+    .ec-ads-remove-if-empty,
+    .featured-ad,
+    .featuredAdBox,
+    .flash-advertisement,
+    .footer-ad,
+    .footer-ads,
+    .footer_ad,
+    .footerad,
+    .forumAd,
+    .gallery-ad,
+    .google-sponsored,
+    .googleAdSense,
+    .googleAds,
+    .greyAd,
+    .grid-item-ad,
+    .has-ad,
+    .hasads,
+    .header-ad,
+    .headerAd,
+    .header_ad,
+    .header_ad_center,
+    .header_advert,
+    .headerad,
+    .headerads,
+    .home-ad,
+    .home-ads,
+    .homeAd,
+    .homead,
+    .homepage-ad,
+    .homepage_ads,
+    .horizontal_ad,
+    .img_ad,
+    .imgad,
+    .inner_ad,
+    .innerad,
+    .insert-post-ads,
+    .ipsAd,
+    .item-ads,
+    .item-container-ad,
+    .js-springs__top,
+    .js-sticky-ad,
+    .leaderboard-ad,
+    .leaderboard-ads,
+    .leftAd,
+    .leftad,
+    .list-ad,
+    .list-ads,
+    .listad,
+    .logo-ad,
+    .marketing-ad,
+    .mid_ad,
+    .middle_AD,
+    .mod-adopenx,
+    .module-ad,
+    .nav-ad,
+    .newsAd,
+    .node-ad,
+    .oasad,
+    .oio-banner-zone,
+    .openx,
+    .overlay-ads,
+    .page-ad,
+    .page_ad,
+    .plainAd,
+    .playerAd,
+    .player_ad,
+    .player_hover_ad,
+    .pm-ad,
+    .post-ad,
+    .post-sponsored,
+    .post_ad,
+    .postad,
+    .premiumAdOverlay,
+    .premiumAdOverlayClose,
+    .promoAd,
+    .promo_ad,
+    .pub_300x250,
+    .pub_300x250m,
+    .pub_728x90,
+    .publicidade,
+    .pushdown-ad,
+    .rail-ad,
+    .rbRectAd,
+    .rectangle_ad,
+    .refreshAds,
+    .region-top-ad-position,
+    .reklam,
+    .reklama,
+    .reportAdLink,
+    .resultad,
+    .review-ad,
+    .right-ad,
+    .rightAd,
+    .right_ad,
+    .right_ads_column,
+    .rightad,
+    .rightadv,
+    .searchAds,
+    .searchad,
+    .searchads,
+    .section-sponsor,
+    .showAd,
+    .side-ad,
+    .side-bar-ad-position1,
+    .sideAd,
+    .sidebar-ads,
+    .single-ad,
+    .singleAd,
+    .skinAd,
+    .sky_ad,
+    .skyscraperAd,
+    .slide-ad,
+    .smallAd,
+    .small_ad,
+    .smallads,
+    .sponsor-box,
+    .sponsor-logo,
+    .sponsorBlock,
+    .sponsorBottom,
+    .sponsoredLinks,
+    .sponsorlink,
+    .sticky-ad,
+    .story-ad,
+    .taboola-ad,
+    .tc_ad_unit,
+    .td-ad,
+    .td-header-ad-wrap,
+    .text-ad,
+    .text-ad-links,
+    .text-ads,
+    .textAd,
+    .text_ad,
+    .text_ads,
+    .textad,
+    .textads,
+    .top-ad,
+    .top-ad-container,
+    .top-ad-content,
+    .top-ad-wrapper,
+    .top-advert,
+    .topAds,
+    .top_ad,
+    .top_ad_div,
+    .top_ad_wrap,
+    .top_ads,
+    .topads,
+    .tower-ad,
+    .trc-content-sponsored,
+    .trc_rbox .syndicatedItem,
+    .trc_rbox_border_elm .syndicatedItem,
+    .trc_rbox_div .syndicatedItem,
+    .trc_related_container div[data-item-syndicated="true"],
+    .type_ads_default,
+    .vertical-ads,
+    .view_ad,
+    .wideAd,
+    .withAds,
+    .wnad,
+    .wpInsertInPostAd,
+    .wp_bannerize,
+    .yom-ad,
+    [href^="http://join.allofgfs.com/track/"],
+    [href^="http://join.freshgfs.com/track/"],
+    [href^="http://join.innocenthigh.com/track/"],
+    [href^="http://join.muffx.com/track/"],
+    [href^="http://join.seemygf.com/track/"],
+    [href^="http://join.self-shot.com/track/"],
+    [href^="http://join.teengfsex.com/track/"],
+    [href^="http://myalternativegflink.com/track/"],
+    [href^="http://secure.18exgfs.com/track/"],
+    [href^="http://secure.badassgirlfriends.com/track/"],
+    [href^="http://secure.bustygfsexposed.com/track/"],
+    [href^="http://secure.chatrevenge.com/track/"],
+    [href^="http://secure.dagfs.com/track/"],
+    [href^="http://secure.fubilov.com/track/"],
+    [href^="http://secure.hotgfvideos.com/track/"],
+    [href^="http://secure.mynngf.com/track/"],
+    [href^="http://secure.obsessedwithmyself.com/track/"],
+    [href^="http://secure.publicgfvideos.com/track/"],
+    [href^="http://secure.realgfsexposed.com/track/"],
+    [href^="http://secure.slutswithphones.com/track/"],
+    [href^="http://secure.watchmygf.com/track/"],
+    a[href*=".revimedia.com/"],
+    a[href*=".trust.zone"],
+    a[href*="/adrotate-out.php?"],
+    a[href*="/relap.io/adv/"],
+    a[href*="marketgid.com/"],
+    a[href*="medicinetizer.ru"],
+    a[href*="runetki.com"],
+    a[href*="universallnk.com"],
+    a[href^="http://ad-emea.doubleclick.net/"],
+    a[href^="http://ad.doubleclick.net/"],
+    a[href^="http://adfarm.mediaplex.com/"],
+    a[href^="http://ads.betfair.com/redirect.aspx?"],
+    a[href^="http://ads2.williamhill.com/redirect.aspx?"],
+    a[href^="http://adserving.unibet.com/"],
+    a[href^="http://adultfriendfinder.com/p/register.cgi?pid="],
+    a[href^="http://affiliate.coral.co.uk/processing/"],
+    a[href^="http://marketgid.com"],
+    a[href^="http://mgid.com/"],
+    a[href^="http://online.ladbrokes.com/promoRedirect?"],
+    a[href^="http://pubads.g.doubleclick.net/"],
+    a[href^="http://us.marketgid.com"],
+    a[href^="http://www.adskeeper.co.uk/"],
+    a[href^="http://www.fbooksluts.com/"],
+    a[href^="http://www.fleshlight.com/"],
+    a[href^="http://www.liutilities.com/"],
+    a[href^="http://www.socialsex.com/"],
+    a[href^="http://www.yourfuckbook.com/?"],
+    a[href^="https://ad.doubleclick.net/"],
+    a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"],
+    div[id^="MarketGid"],
+    div[id^="advads-"],
+    div[id^="dfp-ad-"],
+    div[id^="div-gpt-ad"],
+    div[id^="google_ads_iframe_"],
+    div[itemtype="http://schema.org/WPAdBlock"],
+    iframe[id^="google_ads_frame"],
+    iframe[id^="google_ads_iframe"],
+    iframe[src*=".cameraprive.com"],
+    iframe[src^="http://ad.yieldmanager.com/"] {
+      display: none !important;
+      color: #93e41c !important;
+      background-color: #6e2091 !important;
+    }
+  </style>
+  <link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css">
+</head>
+
+<body>
+  <header class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!--Navbar Header-->
+      <div class="navbar-header">
+        <!--MenuBtn-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+			    <div class="container" onclick="myFunction(this)">
+  				  <div class="bar1"></div>
+  				  <div class="bar2"></div>
+  				  <div class="bar3"></div>
+			    </div>
+        </button>
+        <!--Logo-->
+        <a class="navbar-brand" href="http://103.17.11.230/free/index&amp;ctxID=D8222250E49D4B85A544FE9012A6DA70"><img src="./輝盟（free）_files/header.png" style="width:94%"></a>
+      </div>
+      <!--Cart/Customer-->
+      <div class="navbar-right" style="float: right">
+        <div class="navbar-brand" style="padding: 12px 0">
+          <a class="navbar-cart" href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/cart">
+          <img src="./輝盟（free）_files/Free_Web_Icon_cart-1.png" alt="購物車"></a>
+          <span class="badge" style="display:none">   0</span>
+          <a class="navbar-search" href="http://103.17.11.230/free/login&amp;ctxID=D8222250E49D4B85A544FE9012A6DA70"><img class="img" src="./輝盟（free）_files/Free_Web_Icon_profile-1.png" alt="會員登入"></a>
+        </div>
+      </div>
+      <!--Navbar navbar-ex-collapse-->
+      <div class="collapse navbar-collapse" id="navbar-ex-collapse" style="font-weight:bold; " aria-expanded="false">
+        <ul class="nav navbar-nav navbar-right" style="padding: 0 15px">
+          <li class="active hidden-sm"><a href="http://103.17.11.230/free/index&amp;ctxID=D8222250E49D4B85A544FE9012A6DA70">首頁</a></li>
+          <li><a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f02">關於我們</a></li>
+          <li><a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f01">材質保飬</a></li>
+          <li><a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03">精選商品</a></li>
+          <li><a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f05">電子型錄</a></li>
+          <li><a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f04">銷售據點</a></li>
+          <li><a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f10">顧客服務</a></li>
+          <li class="hidden-sm"><a href="http://103.17.11.230/free/login&amp;ctxID=D8222250E49D4B85A544FE9012A6DA70&amp;message=%E5%90%88%E4%BD%9C%E5%A4%A5%E4%BC%B4%E5%B0%88%E5%8D%80%EF%BC%8C%E8%AB%8B%E4%BB%A5%E5%90%88%E4%BD%9C%E5%A4%A5%E4%BC%B4%E5%B8%B3%E5%AF%86%E7%99%BB%E5%85%A5%EF%BC%81&amp;partner=y">創意協同</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <br><br>
+  <!--Section_A-->
+  <!-- Indicators -->
+  <div class="section">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      </ul>
+      <div class="carousel-inner" role="listbox" ;>
+        <div class="item active">
+          <a href="">
+            <img src="./輝盟（free）_files/Index_1_00004_1.jpg" class="img" onclick="window.location=&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03&#39;,&#39;_self&#39;" style="width:760;height:100%">
+          </a>
+          <div class="carousel-caption" style="padding: 40px;">
+            <h3 style="font-weight: bold; text-shadow: 1px 1px grey">NATURAL DYED</h3>
+            <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/01.%E7%B3%BB%E5%88%97%E5%B0%88%E5%8D%80_01.CASHMERE%E7%B3%BB%E5%88%97" class="btn" style="text-shadow: 1px 1px grey; display: inline-block; color: white; padding: 8px 20px; border:1px solid white;">精選商品</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./輝盟（free）_files/Index_1_00005_1.jpg" class="img" onclick="window.location=&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03&#39;,&#39;_self&#39;">
+          <div class="carousel-caption" style="padding: 40px;">
+            <h3 style="font-weight: bold; text-shadow: 1px 1px grey">FREE CASHMERE</h3>
+            <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/01.%E7%B3%BB%E5%88%97%E5%B0%88%E5%8D%80_01.CASHMERE%E7%B3%BB%E5%88%97" class="btn" style="text-shadow: 1px 1px grey; display: inline-block; color: white; padding: 8px 20px; border:1px solid white;">精選商品</a>
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="http://103.17.11.230/MagicScripts/Mgrqispi.dll?appname=free&amp;prgname=index&amp;v2#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="right carousel-control" href="http://103.17.11.230/MagicScripts/Mgrqispi.dll?appname=free&amp;prgname=index&amp;v2#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </div>
+  <!--Section_B-->
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="margin-top: 25px">
+          <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/01.%E7%B3%BB%E5%88%97%E5%B0%88%E5%8D%80_01.CASHMERE%E7%B3%BB%E5%88%97">
+            <img class="img" style="width: 100%;" src="./輝盟（free）_files/Index_2_00001_1.jpg" alt="" onclick="window.location=&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/01.系列專區_01.CASHMERE系列&#39;,&#39;_self&#39;">
+          </a>
+        </div>
+        <div class="col-md-6" style="margin-top: 25px">
+          <div class="row">
+            <div class="col-md-6" style="padding-bottom: 25px;">
+              <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/02.%E5%85%A8%E9%A1%9E%E5%88%A5%E5%95%86%E5%93%81_01.%E4%B8%8A%E5%8D%8A%E8%BA%AB_03.%E6%A3%89T">
+                <img class="img" style="width:100%" src="./輝盟（free）_files/Index_2_00002_1.jpg" alt=""  onclick="window.location=&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/02.全類別商品_01.上半身_03.棉T&#39;,&#39;_self&#39;">
+              </a>
+            </div>
+            <div class="col-md-6" style="padding-bottom: 25px;">
+              <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/01.%E7%B3%BB%E5%88%97%E5%B0%88%E5%8D%80_03.%E6%9C%89%E6%A9%9F%E6%A3%89%E7%B3%BB%E5%88%97">
+                <img class="img" style="width:100%" src="./輝盟（free）_files/Index_2_00003_1.jpg" alt=""  onclick="window.location=&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/01.系列專區_03.有機棉系列&#39;,&#39;_self&#39;">
+              </a>
+            </div>
+            <div class="col-md-12">
+              <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/01.%E7%B3%BB%E5%88%97%E5%B0%88%E5%8D%80_02.INDIGO%E7%B3%BB%E5%88%97">
+            <img class="img" style="width:100%" src="./輝盟（free）_files/Index_2_00004_1.jpg" alt=""  onclick="window.location=&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f03/01.系列專區_02.INDIGO系列&#39;,&#39;_self&#39;">
+          </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!--Section_C-->
+  <div class="section">
+    <div class="container">
+      <div class="row visible-lg-block visible-md-block visible-sm-block visible-xs-block">
+        <div class="col-md-12">
+          <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/story/"><img class="img" src="./輝盟（free）_files/Index_3_00001_1.jpg" alt="" style="width:100%" onclick="javascript:window.open(&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/story/&#39;,&#39;_self&#39;)"></a>
+          <p class="text-block" style=" text-shadow:2px 2px #5b5b5b">品牌故事</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section_D-->
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" style="margin-top: 25px;">
+          <div class="">
+            <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f01/">
+              <img class="img visible-lg-block visible-md-block"  src="./輝盟（free）_files/Index_4_00001_1.jpg" alt="" onclick="javascript:window.open(&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f01/&#39;,&#39;_self&#39;)">
+              <img class="img visible-sm-block visible-xs-block" src="./輝盟（free）_files/Index_4_00001_1s.jpg" alt="" style="width: 100%" onclick="javascript:window.open('/free/pages/4531833C50EE4D629FCFEB950B003012/f01/','_self')">
+            </a>
+            <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f01/">
+              <p class="text-block">材質介紹與保養</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-top: 25px;">
+          <div class="">
+            <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/csr/">
+              <img class="img visible-lg-block visible-md-block" src="./輝盟（free）_files/Index_4_00002_1.jpg" alt="" onclick="javascript:window.open(&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/csr/&#39;,&#39;_self&#39;)">
+              <img class="img visible-sm-block visible-xs-block" src="./輝盟（free）_files/Index_4_00002_1s.jpg" alt="" onclick="javascript:window.open(&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/csr/&#39;,&#39;_self&#39;)">
+            </a>
+            <a href="http://103.17.11.230/MagicScripts/Mgrqispi.dll?appname=free&amp;prgname=index&amp;v2">
+              <p class="text-block" style="text-align: center;">企業社會責任</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-top: 25px;">
+          <div class="">
+            <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f10/">
+              <img class="img visible-lg-block visible-md-block" src="./輝盟（free）_files/Index_4_00003_1.jpg" alt=""  onclick="javascript:window.open(&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f10/&#39;,&#39;_self&#39;)">
+              <img class="img visible-sm-block visible-xs-block" src="./輝盟（free）_files/Index_4_00003_1s.jpg" alt=""  onclick="javascript:window.open(&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f10/&#39;,&#39;_self&#39;)">
+            </a>
+            <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f10/">
+              <p class="text-block" href="http://103.17.11.230/MagicScripts/Mgrqispi.dll?appname=free&amp;prgname=index&amp;v2">顧客專屬服務</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-top: 25px;">
+          <div class="">
+            <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f04/">
+              <img class="img visible-lg-block visible-md-block" src="./輝盟（free）_files/Index_4_00004_1.jpg" alt=""  onclick="javascript:window.open(&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f04/&#39;,&#39;_self&#39;)">
+              <img class="img visible-sm-block visible-xs-block" src="./輝盟（free）_files/Index_4_00004_1s.jpg" alt=""  onclick="javascript:window.open(&#39;/free/pages/D8222250E49D4B85A544FE9012A6DA70/f04/&#39;,&#39;_self&#39;)">
+            </a>
+            <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f04/">
+              <p class="text-block">銷售據點資訊</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!--Footer-->
+  <footer class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="text-align: center; ">
+          <a href="#"><h4 style="margin:7%; display: inline-block; font-family:Microsoft JhengHei;font-weight:bold; color:#000000;" data-toggle="modal" data-target="#myModal">會員專屬福利</h4></a>
+          <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f10#rules"><h4 style="margin:7%; display: inline-block; font-family:Microsoft JhengHei;font-weight:bold; color:#000000;">購物說明</h4></a>
+        </div>
+        <div class="col-md-6" style="text-align: center">
+          <a href="https://www.youtube.com/channel/UCvFNVqHYfjPX_MmHya0JF1w" target="_blank"><img src="http://103.17.11.230/free/images/youtube.jpg" alt="" style="width: 8%; margin: 2%; padding-bottom: 20px; display: none !important;"></a>
+          <a href="https://www.facebook.com/FREE.TW" target="_blank"><img src="http://103.17.11.230/free/images/facebook.jpg" alt="" style="width: 8%; margin: 2%; padding-bottom: 20px; display: none !important;"></a>
+          <a href="mailto:freeco@tpts7.seed.net.tw" target="_blank"><img src="./輝盟（free）_files/email.jpg" alt="" style="width:8%; margin:2%; padding-bottom:20px"></a>
+          <a href="http://103.17.11.230/gluttons/index" target="_blank"><img src="./輝盟（free）_files/footer.jpg" alt="" style="width:15%; margin:2%; padding-bottom:20px"></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="col-md-12" style="text-align: center; margin-bottom: 1%;font-size: 14px;">
+      <a href="tel:0222186550" style="color: #000000; font-weight: bold">客服專線 (02)2218-6550︱</a>
+      <a href="http://103.17.11.230/free/pages/D8222250E49D4B85A544FE9012A6DA70/f10#pr" style="color:#000000; font-weight:bold; ">隱私權政策︱</a>
+      <div class="row visible-sm-block visible-xs-block"><br></div>
+      <b2 style="color:#000000; margin-top:5%; font-weight:bold"> &copy; 2017 輝盟國際股份有限公司 All Rights Reserved.</b2>
+  </footer>
+  <!--CustomerGuide-->
+  <div class="section" style="font-family: Microsoft JhengHei;" align="center">
+    <div class="container">
+      <div class="row">
+        <div class="container" style="font-weight：bold;">
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <div>
+                    <h1 style="font-weight: bold; margin-bottom: 24px;">FREE與您一起自信美麗</h1>
+                    <h4 style="font-weight: bold;">自由，是您想要的生活進行式；</h4>
+                    <h4 style="font-weight: bold;">FREE秉持著「高品質、高健康、高科技」的精神，追求服飾品質。</h4>
+                    <h4 style="font-weight: bold;">加入FREE會員，您將能無負擔的，跟著一起愛地球，</h4>
+                    <h4 style="font-weight: bold;">為美好的生活多一分美麗。</h4>
+                    <br>
+                  </div>
+                  <a href="https://freeco.com.tw/MagicScripts/Mgrqispi.dll?appname=free&amp;prgname=pages&amp;page=nem&amp;ctxID=4BEF119093AF47D29F9AD6B20CA80C4D&amp;pb=" class="btn btn-default" role="button" style="color:#ffffff;background-color:#000000">立刻加入會員</a>
+                </div>
+                <div class="modal-body">
+                  <h2 style="font-size:200%; font-weight:bold; padding-top:20px">會員專屬福利</h2>
+                  <div class="table-responsive" style="text-align:center; border: 2px solid grey">
+                    <div class="visible-lg-block visible-md-block">
+                      <table class="table table-bordered" style="min-width:100%;">
+                        <thead>
+                          <tr style="text-align: center; font-weight: bold">
+                            <th></th>
+                            <th style="text-align:center; width:23%">單筆消費滿$8,000 <br><span style="font-size: 150%;">一般會員</span></th>
+                            <th style="text-align:center;">單筆消費"當季商品"滿$8,000 <br><span style="font-size: 150%;">VIP新會員</span></th>
+                            <th style="text-align:center;">去年有一筆以上的"當季商品"<br><span style="font-size: 150%; ">VIP舊會員</span></th>
+                          </tr>
+                        </thead>
+                        <tbody style="text-align: center; font-weight: bold" align="middle">
+                          <tr>
+                            <td>
+                              <span style="font-size: 150%; ">迎賓禮</span><br> 指定專櫃的不定期優惠及活動通知
+                            </td>
+                            <td style="padding-top:20px">●</td>
+                            <td style="padding-top:20px">●</td>
+                            <td style="padding-top:20px">●</td>
+                          </tr>
+                          <tr>
+                            <td style="font-size: 150%" ;="">紅利點數</td>
+                            <td>●</td>
+                            <td>●</td>
+                            <td>●</td>
+                          </tr>
+                          <tr>
+                            <td style="font-size: 150%">回饋禮</td>
+                            <td>X</td>
+                            <td>年度券$6,000</td>
+                            <td>年度券$6,000</td>
+                          </tr>
+                          <tr>
+                            <td style="font-size: 150%">生日禮</td>
+                            <td>X</td>
+                            <td>生日券$1,200</td>
+                            <td>生日券$1,200</td>
+                          </tr>
+                          <tr>
+                            <td style="font-size: 150%">不定期特殊優惠</td>
+                            <td>X</td>
+                            <td>●</td>
+                            <td>●</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="visible-sm-block visible-xs-block">
+                      <div class="table-responsive">
+                        <table class="table-1 table-bordered" style="min-width:100%;">
+                          <thead>
+                            <tr>
+                              <th scope="col" style="width:33%">單筆消費滿$8,000</th>
+                              <th scope="col">單筆消費"當季商品"滿$8,000</th>
+                              <th scope="col">去年有一筆以上的"當季商品"</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr style="font-size:150%">
+                              <td>一般會員</td>
+                              <td>VIP新會員</td>
+                              <td>VIP舊會員</td>
+                            </tr>
+                            <tr>
+                              <td colspan="3"><span style="font-size:150%">迎賓禮</span><br>指定專櫃的不定期優惠及活動通知
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>●</td>
+                              <td>●</td>
+                              <td>●</td>
+                            </tr>
+                            <tr>
+                              <td colspan="3" style="font-size:150%">紅利點數</td>
+                            </tr>
+                            <tr>
+                              <td>●</td>
+                              <td>●</td>
+                              <td>●</td>
+                            </tr>
+                            <tr>
+                              <td colspan="3" style="font-size:150%">回饋禮</td>
+                            </tr>
+                            <tr>
+                              <td>X</td>
+                              <td>年度券$6,000</td>
+                              <td>年度券$6,000</td>
+                            </tr>
+                            <tr>
+                              <td colspan="3" style="font-size:150%">生日禮</td>
+                            </tr>
+                            <tr>
+                              <td>X</td>
+                              <td>生日券$1,200</td>
+                              <td>生日券$1,200</td>
+                            </tr>
+                            <tr>
+                              <td colspan="3" style="font-size:150%">不定期特殊優惠</td>
+                            </tr>
+                            <tr>
+                              <td>X</td>
+                              <td>●</td>
+                              <td>●</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p style="padding-top:20px; font-size: 16px; font-weight: bold; text-align:center;">查看您的會員等級</p>
+                <a href="https://freeco.com.tw/free/login&amp;ctxID=4BEF119093AF47D29F9AD6B20CA80C4D" class="btn btn-default" role="button" style="font-size: 16px; color:#ffffff;background-color:#000000">立即登入</a>
+                <p style="padding-top: 10px; padding-bottom: 10px; font-size: 16px; font-weight: bold; text-align: center;">
+                  備註：FREE會員制度相關活動辦法與注意事項請參考
+                  <span style=""><a class="myModal" href="https://freeco.com.tw/free/pages/4BEF119093AF47D29F9AD6B20CA80C4D/f10" color:="" style="color: #f44505; ">顧客服務</a></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--TopBtn Script-->
+  <button onclick="topFunction()" id="TopBtn" title="Go to top" style="display: block;">
+    <img src="./輝盟（free）_files/angle-up-02.png" alt="">
+    <!--<i class="fas fa-angle-up"></i>-->
+	  <!--<i class="fa fa-arrow-up"></i>-->
+  </button>
+  <script>
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("TopBtn").style.display = "block";
+      } else {
+        document.getElementById("TopBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
