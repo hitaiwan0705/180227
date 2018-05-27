@@ -91,6 +91,7 @@
     /* Image Options */
 
     img {
+      max-width: 100%;
       z-index: 40;
       opacity: 1.0;
     }
@@ -172,12 +173,12 @@
         z-index: 1;
       }
 
-      .table {
+      .table-01 {
         border-spacing: 0;
         width: 100%;
       }
 
-      .table-1 {
+      .table-02 {
         border-collapse: collapse;
         border-spacing: 0;
         width: 100%;
@@ -232,10 +233,16 @@
       }
 
       /* Zebra-striped table rows */
-      tr:nth-child(even) {
+
+      thead>tr {
+        background-color: white !important;
+      }
+      tr:nth-child(odd) {
         background-color: #fff5bf;
       }
+
   </style>
+
   <style type="text/css" id="parrottalks-notetaker-style">
     html>body.evernote_clearly__before_visible #parrottalks-notetaker>iframe,
     html>body.clearlyBeforeVisible #parrottalks-notetaker>iframe:not(#evernoteGlobalTools):not(#evernoteOptionsPage):not(#evernoteClearlyArticle) {
@@ -1162,7 +1169,7 @@
     </div>
   </footer>
   <!--CustomerGuide-->
-  <div class="section" style="font-family: Microsoft JhengHei;" align="center">
+  <div class="section" align="center">
     <div class="container">
       <div class="row">
         <div class="container" style="font-weight：bold;">
@@ -1187,7 +1194,7 @@
                   <h2 style="font-size:200%; font-weight:bold; padding-top:20px">會員專屬福利</h2>
                   <div class="table-responsive" style="text-align:center; border: 8px solid #ddd">
                     <div class="visible-lg-block visible-md-block">
-                      <table class="table table-bordered" style="min-width:100%;">
+                      <table class="table-01 table-bordered" style="min-width:100%;">
                         <thead>
                           <tr style="text-align: center; font-weight: bold">
                             <th></th>
@@ -1234,20 +1241,15 @@
                     </div>
                     <div class="visible-sm-block visible-xs-block">
                       <div class="table-responsive">
-                        <table class="table-1 table-bordered" style="min-width:100%;">
+                        <table class="table-02 table-bordered" style="min-width:100%;">
                           <thead>
                             <tr>
-                              <th scope="col" style="width:33%">單筆消費滿$8,000</th>
-                              <th scope="col">單筆消費"當季商品"滿$8,000</th>
-                              <th scope="col">去年有一筆以上的"當季商品"</th>
+                              <th scope="col" style="width:33%">單筆消費滿$8,000<br><span style="font-size: 150%">一般會員</span></th>
+                              <th scope="col">單筆消費"當季商品"滿$8,000<br><span style="font-size: 150%">VIP新會員</span></th>
+                              <th scope="col">去年有一筆以上的"當季商品"<br><span style="font-size: 150%">VIP舊會員</span></th>
                             </tr>
                           </thead>
                           <tbody>
-                            <tr style="font-size:150%">
-                              <td>一般會員</td>
-                              <td>VIP新會員</td>
-                              <td>VIP舊會員</td>
-                            </tr>
                             <tr>
                               <td colspan="3"><span style="font-size:150%">迎賓禮</span><br>指定專櫃的不定期優惠及活動通知
                               </td>
