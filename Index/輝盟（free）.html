@@ -262,12 +262,12 @@
     }
 
 
-    .table {
+    .table-01 {
       border-spacing: 0;
       width: 100%;
     }
 
-    .table-1 {
+    .table-02 {
       border-collapse: collapse;
       border-spacing: 0;
       width: 100%;
@@ -275,8 +275,8 @@
 
     .modal-dialog {
       width: auto;
-
     }
+
 
     /* Style table headers and table data */
 
@@ -329,13 +329,16 @@
       }
     }
 
-    /* Zebra-striped table rows */
+    /* Zebra-striped table rows*/
 
-    tr:nth-child(even) {
+    thead>tr {
+      background-color: white !important;
+    }
+    tr:nth-child(odd) {
       background-color: #fff5bf;
     }
 
-    }
+
   </style>
 
 
@@ -1066,7 +1069,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <header class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <!--Navbar Header-->
       <div class="navbar-header">
@@ -1080,7 +1083,7 @@
 			    </div>
         </button>
         <!--Logo-->
-        <a class="navbar-brand" href="http://103.17.11.230/free/index&amp;ctxID=D8222250E49D4B85A544FE9012A6DA70"><img src="./輝盟（free）_files/header.png" style="width:94%; margin:0"></a>
+        <a class="navbar-brand" href="http://103.17.11.230/free/index&amp;ctxID=D8222250E49D4B85A544FE9012A6DA70"><img src="./輝盟（free）_files/header.png" style="width:94%; "></a>
       </div>
       <!--Cart/Customer-->
       <div class="navbar-right" style="float: right">
@@ -1105,7 +1108,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </header>
   <br><br>
   <!--Section_A-->
   <div class="section">
@@ -1294,9 +1297,9 @@
                 </div>
                 <div class="modal-body">
                   <h2 style="font-size:200%; font-weight:bold; padding-top:20px">會員專屬福利</h2>
-                  <div class="table-responsive" style="text-align:center; border: 8px solid #ddd">
+                  <div class="table-responsive" style="text-align:center;  border: 8px solid #ddd">
                     <div class="visible-lg-block visible-md-block">
-                      <table class="table table-bordered" style="min-width:100%;">
+                      <table class="table-01 table-bordered" style="min-width:100%;">
                         <thead>
                           <tr style="text-align: center; font-weight: bold">
                             <th></th>
@@ -1343,20 +1346,14 @@
                     </div>
                     <div class="visible-sm-block visible-xs-block">
                       <div class="table-responsive">
-                        <table class="table-1 table-bordered" style="min-width:100%;">
+                        <table class="table-02 table-bordered" style="min-width:100%;">
                           <thead>
                             <tr>
-                              <th scope="col" style="width:33%">單筆消費滿$8,000</th>
-                              <th scope="col">單筆消費"當季商品"滿$8,000</th>
-                              <th scope="col">去年有一筆以上的"當季商品"</th>
+                              <th scope="col" style="width:33%">單筆消費滿$8,000<br><span style="font-size: 150%">一般會員</span></th>
+                              <th scope="col">單筆消費"當季商品"滿$8,000<br><span style="font-size: 150%">VIP新會員</span></th>
+                              <th scope="col">去年有一筆以上的"當季商品"<br><span style="font-size: 150%">VIP舊會員</span></th>
                             </tr>
                           </thead>
-                          <tbody>
-                            <tr style="font-size:150%">
-                              <td>一般會員</td>
-                              <td>VIP新會員</td>
-                              <td>VIP舊會員</td>
-                            </tr>
                             <tr>
                               <td colspan="3"><span style="font-size:150%">迎賓禮</span><br>指定專櫃的不定期優惠及活動通知
                               </td>
